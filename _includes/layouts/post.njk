@@ -1,0 +1,35 @@
+---
+layout: layouts/base.njk
+---
+<article class="blog-post" itemscope itemtype="{{ itemtype or 'https://schema.org/BlogPosting' }}">
+
+<header>
+	<h1 itemprop="headline">{{ title }}</h1>
+</header>
+<section itemprop="articleBody">
+{{ content | safe }}
+<p>
+<small itemprop="datePublished" content="{{ date | htmlDateString }}" }>Published {{ date | readableDate('DDD') }}</small>
+{% if isDiffDay(updated, date) %}
+<br><small itemprop="dateModified" content="{{ updated | htmlDateString }}" }>Updated {{ updated | readableDate('DDD') }}</small>
+{% endif %}
+</p>
+<hr>
+<footer>
+{% include "bio.njk" %}
+</footer>
+</section>
+
+{%- if collections.posts %}
+{%- set previousPost = collections.posts | getPreviousCollectionItem %}
+{%- set nextPost = collections.posts | getNextCollectionItem %}
+{%- if nextPost or previousPost %}
+<nav class="blog-post-nav">
+<ul>
+{%- if previousPost %}<li><a rel="prev" href="{{ previousPost.url }}">← {{ previousPost.data.title }}</a></li>{% endif %}
+{%- if nextPost %}<li><a rel="next" href="{{ nextPost.url }}">{{ nextPost.data.title }} →</a></li>{% endif %}
+</ul>
+</nav>
+{%- endif %}
+{%- endif %}
+</article>
