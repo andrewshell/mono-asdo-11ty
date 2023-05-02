@@ -196,7 +196,7 @@ ol li {
 
 .hlist li {
   list-style-type: none;
-  padding-right: 5px;
+  padding: 0.5em 0.5em 0.5em 0;
   margin: 0;
 }
 
@@ -320,7 +320,7 @@ a:focus {
   border-radius: 50%;
   -khtml-border-radius: 50%;
   border: 3px solid #fff;
-  min-width: 50px;
+  min-width: 55px;
   margin-right: var(--spacing-4);
   margin-bottom: var(--spacing-0);
 }
