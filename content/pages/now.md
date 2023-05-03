@@ -1,7 +1,7 @@
 ---
 title: What I’m doing now
 date: 2020-04-13T16:02:07.504Z
-updated: 2022-11-08T17:04:55.508Z
+updated: 2023-05-03T01:03:55.305Z
 published: true
 pagetype: https://schema.org/WebPage
 itemtype: https://schema.org/Article
@@ -9,11 +9,18 @@ eleventyNavigation:
   key: Now
   order: 3
 ---
+## Health and Burnout
 
-## House Projects
+A lot is going on in my life that is burning me out. For instance, I know that my house in its unfinished state is wearing me down, making it less likely that I'll be able to work on my house.
 
-For most of the year I was busy helping my mom move to Madison. She's now my next door neighbor. Because of this, I never got around to finishing the floors in my house and have lived with subfloors, staples, and tack strips in half of my house. I had hoped to wrap things up in time for Thanksgiving, but I decided not to stress myself out and I'll make the turkey and take it to my moms house.
+Work is going smoothly and is not particularly stressful, but sometimes it's a real struggle.
 
-## Releasing old Goals
+I'm sure my health contributes to the burnout, but nothing I've tried so far has moved the needle. I'm waiting on a CPAP machine since I've been diagnosed with sleep apnea. I'm hoping that will turn things around.
 
-There have been goals of mine that I held on to my entire life. I've decided that it's time to [release them](https://sive.rs/pets). I'm not sure what will be next, but I don't want to get stuck "shoulding all over myself"
+## Mom's Autobiography
+
+A couple of years ago, for Christmas, I bought my mom a subscription to StoryWorth. It's a service that sent her a question to answer about herself every week for a year. 
+
+Unfortunately, I still need to publish the book (and website) because my mother is not the best writer, and I'm going through each post and cleaning it up to make it readable.
+
+It's not particularly difficult, but it is time-consuming. I hope to wrap up the website portion by Mother's Day, but since that's right around the corner, I'm not holding my breath.
