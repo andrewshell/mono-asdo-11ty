@@ -38,10 +38,11 @@
 		"@11ty/eleventy-plugin-rss": "^1.2.0",
 		"@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
 		"@netlify/plugin-lighthouse": "^4.1.1",
-		"luxon": "^3.3.0",
-		"markdown-it-anchor": "^8.6.7",
+		"eleventy-plugin-gen-favicons": "^1.1.2",
 		"lunr": "^2.3.9",
-		"lunr-languages": "^1.11.0"
+		"lunr-languages": "^1.11.0",
+		"luxon": "^3.3.0",
+		"markdown-it-anchor": "^8.6.7"
 	},
 	"dependencies": {
 		"@typefaces-pack/typeface-inter": "^1.0.3"

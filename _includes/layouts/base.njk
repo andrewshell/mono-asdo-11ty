@@ -6,9 +6,10 @@
 	<title>{{ title or metadata.title }}</title>
 	<meta name="description" content="{{ description or metadata.description }}">
 
-	<link rel="alternate" href="/rss.xml" type="application/atom+xml" title="{{ metadata.title }}">
+	<link rel="alternate" href="/rss.xml" type="application/rss+xml" title="{{ metadata.title }}">
 
 	<meta name="generator" content="{{ eleventy.generator }}">
+	{% favicons 'public/img/gatsby-icon.png', appleIconBgColor='#fff' %}
 
 	{%- css %}{% include "node_modules/@typefaces-pack/typeface-inter/index.css" %}{% endcss %}
 	{%- css %}{% include "public/css/normalize.css" %}{% endcss %}
