@@ -85,26 +85,12 @@ module.exports = function(eleventyConfig) {
 		if( n < 0 ) {
 			return array.slice(n);
 		}
-
 		return array.slice(0, n);
 	});
 
 	// Return the smallest number argument
 	eleventyConfig.addFilter("min", (...numbers) => {
 		return Math.min.apply(null, numbers);
-	});
-
-	// Return all the tags used in a collection
-	eleventyConfig.addFilter("getAllTags", collection => {
-		let tagSet = new Set();
-		for(let item of collection) {
-			(item.data.tags || []).forEach(tag => tagSet.add(tag));
-		}
-		return Array.from(tagSet);
-	});
-
-	eleventyConfig.addFilter("filterTagList", function filterTagList(tags) {
-		return (tags || []).filter(tag => ["all", "nav", "post", "posts"].indexOf(tag) === -1);
 	});
 
 	eleventyConfig.addFilter("forMonth", (collection, month) => {
@@ -116,7 +102,7 @@ module.exports = function(eleventyConfig) {
 
 	eleventyConfig.addCollection("months", function(collectionApi) {
 		let months = new Map();
-		for (let item of collectionApi.getFilteredByTag('posts')) {
+		for (let item of collectionApi.getFilteredByTag('essays')) {
 			let slug = DateTime.fromJSDate(item.date, "utc").toFormat("y-LL");
 			let title = DateTime.fromJSDate(item.date, "utc").toFormat("LLLL yyyy");
 			months.set(slug, { slug, title });
