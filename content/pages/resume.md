@@ -5,21 +5,76 @@ date: 2020-11-08T00:39:03Z
 
 ## Andrew Shell
 
-Senior Web Engineer at Johnson Health Tech North America
-
 [E-Mail Andrew Shell](/contact/)
 
 [![View Andrew Shell's profile on LinkedIn](https://www.linkedin.com/img/webpromo/btn_viewmy_160x25.gif)](https://www.linkedin.com/in/andrewshell)
 
-[Download Single Page Resume PDF](/resume.pdf)
+[Download Resume PDF](/resume.pdf)
 
-## Skills
+With 20 years of experience in web development, including senior roles, mentoring, and leadership positions, and is well-suited for a Senior Full-Stack Web Developer. Demonstrating proficiency in PHP, Javascript, and frameworks such as React, Angular, and Node.js, with a strong track record of delivering comprehensive solutions across the entire stack. Having successfully launched two software-as-a-service applications as a founder and CTO, expertise includes managing teams of developers and prioritizing feature development in collaboration with stakeholders. His extensive experience, excellent communication skills, strong work ethic, and command of modern development tools and technologies make this professional a valuable asset in a dynamic and fast-paced environment.
 
-I've been building a wide variety of web applications for twenty years. Much of my work has used **PHP** and **Node.js**, but I've also worked extensively with **React**, **Ionic 4**, and **Angular**.
+## Technical & Core Skills
 
-I'm incredibly comfortable **learning new things quickly** and **working with ambiguity**. I always consider the **goals of the business** before I work. The best way to be productive is to avoid spending time building the wrong thing.
+PHP | Javascript | Typescript | Node.js | Amazon Web Services (AWS) | MySQL | MongoDB | Linux | React | Angular | Mocha | Chai | Express | Nest.js | Node.js | Testing Frameworks | Jira | Git | Docker | Node.js | PHP | Laravel | Symfony | Elastic Beanstalk | Lambda | SQS | SNS | Firehose | MongoDB | DynamoDB | Technical Advisory | Excels in Communication Skills | Code Review | Hands-on Developer | Software Architecture | Leadership | API Development | Backend Programming | Frontend Programming
 
-I've spent a lot of time **speaking in public** as well as **teaching** groups and individuals. **Communication skills** are one of my best assets. I enjoy **coaching and mentoring** others.
+## Work History
+
+### Johnson Health Tech, Cottage Grove, WI
+_Senior Web Engineer, 10/2019 – Present_
+
+* Leads initiatives to improve the codebase and roll out new features, effectively managing significant technical debt.
+* Successfully spearheaded integration testing for legacy applications using Docker, Chai, and Mocha.
+* Develops and documents best practices for git, release planning, and deploying across different environments.
+* Supervises and mentor's junior developers, fostering team growth and overseeing data pipeline system management.
+* Collaborates with other engineering teams to design resilient, fault-tolerant systems.
+* Demonstrates expertise with Javascript, Typescript and uses Node.js as a backend solution.
+
+### Acumium, Madison, WI
+_Web Developer, 11/2017 – 10/2018_
+
+* Developed and implemented training plans to enhance Git competence and standardized development processes.
+* Designed innovative features to meet product user story requirements.
+* Utilized Node.js in backend development for high-scale applications, supporting multiple concurrent requests.
+* Standardized development processes by introducing Git workflow practices.
+
+### Geekity LLC., Madison, WI
+_Founder/Digital Developer,  11/2017 – 10/2018_
+
+* Founded Geekity LLC with the purpose of invoicing client companies for provided services.
+* Established and managed Geekity LLC to efficiently handle the invoicing process.
+* Implemented and developed robust test and deployment systems and processes.
+* Maintained professional relationships with Stryv and Rockwell Automation/Aquent.
+
+#### Stryv, Madison, WI
+_Lead Full-Stack Developer, 11/2017 – 10-2018_
+
+* Designed and implemented full-stack applications, ensuring seamless integration of front-end and back-end components.
+* Collaborated closely with stakeholder to gather requirements and translate them into technical specifications.
+* Implemented efficient database structures and optimized queries for improved performance.
+* Developed and maintained RESTful APIs, enabling smooth communication between client and server.
+* Implemented best practices to ensure code quality, maintainability, and adherence to coding standards.
+
+#### Rockwell Automation/Aquent, Milwaukee, WI
+_Freelance React Developer, 08/2018 - 10/2018_
+
+* Developed offline applications using React.js for the frontend.
+* Communicated with stakeholders for requirements and feedback.
+
+### Pinpoint Software, Madison, WI
+_Co-Founder and Chief Technology Officer, 06/2011 – 01/2018_
+
+* Built two software-as-a-service applications, demonstrating technical expertise and entrepreneurial drive.
+* Successfully launched a proof of concept six weeks prior to field testing, leading to securing seed financing.
+* Collaborated closely with customers and the CEO to design specifications and prioritize feature development.
+* Managed servers and development pipelines, ensuring efficient and reliable operations.
+* Recruited and managed a team of developers, both in-house and outsourced, and worked with designers.
+* Developed applications using Angular/Ionic for the frontend, delivering user-friendly and responsive interfaces.
+
+## Education
+
+Herzing College, Madison, WI
+Bachelor of Science – Technology Management
+Associate of Science – Computer Systems
 
 ## Talks
 
@@ -31,47 +86,3 @@ I've spent a lot of time **speaking in public** as well as **teaching** groups a
 _PHP|Architect Magazine_
 
   * [Filtering User-submitted HTML with HTML Purifier](/htmlpurifier-article/) - [June 2012](http://www.phparch.com/magazine/2012-2/june/)
-
-## Experience
-
-### Senior Web Engineer/ People Lead 2019-Present
-_Johnson Health Tech, Cottage Grove, WI_
-
-Senior Engineer building and maintaining a network of connected workout services and pipelines. Services are all on AWS using Docker, Node.js, PHP, Python, Elastic Beanstalk, Lambda, SQS, SNS, Firehose, MongoDB, and DynamoDB. Additionally, I mentor four developers as part of my People Lead role.
-
-I'm responsible for planning and executing various solutions for our stakeholders, many of which involve coordinating work across other teams, both internal and external to our organization. I lead investigations to gather information and document systems and processes so I can recommend strategies for improving reliability, decreasing latency, and eliminating legacy tech debt.
-
-### Senior Engineer 2018-2019
-_Acumium, Madison, WI_
-
-Worked on a variety of PHP and Node.js web applications for our clients. Designed and executed a git and Gitflow training program across the organization to unify our development practices.
-
-### CTO & Lead Developer 2017-2018
-_Stryv, Remote from Madison, WI_
-
-Building web and mobile applications with PHP, Laravel, SVG, Angular, and the Ionic Framework. Close collaboration with the founder and CEO to iterate on his vision.
-
-### Co-Founder and CTO 2011-2018
-_Pinpoint Software, Madison, WI_
-
-At Pinpoint Software, I built and maintained two SaaS products. Our flagship product DateCheckPro was a tool for grocery stores to manage and reduce expiring inventory. Shortly after, we launched Taskle, a tool for stores to manage recurring audits and checklists.
-
-I designed database schemas (MySQL) and built the back and front ends during this time. Additionally, I worked closely with my co-founder and grocery industry partners.
-
-## Honors & Activities
-
-  * [Zend Certified Engineer](http://www.zend.com/en/yellow-pages/ZEND901198) (PHP 4 & 5)
-  * Organizer of the [Madison PHP Meetup Group](https://www.meetup.com/madisonphp/) 2004—2008, 2010-2013
-  * Co-Organizer of the [Madison PHP Meetup Group](https://www.meetup.com/madisonphp/) 2013-Present
-  * Co-Organizer of the [Madison PHP Conference](https://www.madisonphpconference.com/) 2013-2015
-  * Jason Robert Waterhouse Award for outstanding academics and peer tutoring
-
-## Education
-
-B.S., Herzing College, Madison Wisconsin<br />
-Major: Technology Management<br />
-Graduated: December 2006
-
-A.S., Herzing College, Madison Wisconsin<br />
-Major: Computer Information Systems<br />
-Graduated: October 2003
