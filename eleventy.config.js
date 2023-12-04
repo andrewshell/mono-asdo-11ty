@@ -1,5 +1,6 @@
 const { DateTime } = require("luxon");
 const markdownItAnchor = require("markdown-it-anchor");
+const markdownItFootnote = require("markdown-it-footnote");
 
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
@@ -111,18 +112,20 @@ module.exports = function(eleventyConfig) {
 	});
 
 	// Customize Markdown library settings:
-	// eleventyConfig.amendLibrary("md", mdLib => {
-	// 	mdLib.use(markdownItAnchor, {
-	// 		permalink: markdownItAnchor.permalink.ariaHidden({
-	// 			placement: "after",
-	// 			class: "header-anchor",
-	// 			symbol: "#",
-	// 			ariaHidden: false,
-	// 		}),
-	// 		level: [1,2,3,4],
-	// 		slugify: eleventyConfig.getFilter("slugify")
-	// 	});
-	// });
+	eleventyConfig.amendLibrary("md", mdLib => {
+		mdLib.use(markdownItAnchor, {
+			permalink: markdownItAnchor.permalink.ariaHidden({
+				placement: "after",
+				class: "header-anchor",
+				symbol: "#",
+				ariaHidden: false,
+			}),
+			level: [1,2,3,4],
+			slugify: eleventyConfig.getFilter("slugify")
+		});
+
+		mdLib.use(markdownItFootnote);
+	});
 
 	// Features to make your build faster (when you need them)
 
