@@ -10,11 +10,12 @@ layout: layouts/base.njk
 {% if updated %}
 <p itemprop="dateModified" content="{{ updated | htmlDateString }}" }><small>Updated {{ updated | readableDate('DDD') }}</small></p>
 {% endif %}
+</section>
 <hr>
 <footer>
 {% include "bio.njk" %}
 </footer>
-</section>
+</article>
 
 {%- if collections.posts %}
 {%- set previousPost = collections.posts | getPreviousCollectionItem %}
@@ -28,4 +29,3 @@ layout: layouts/base.njk
 </nav>
 {%- endif %}
 {%- endif %}
-</article>

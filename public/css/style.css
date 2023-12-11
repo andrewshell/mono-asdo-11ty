@@ -28,11 +28,11 @@
   --spacing-24: 6rem;
   --spacing-32: 8rem;
   --fontFamily-sans: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif; /* stylelint-disable-line value-keyword-case */
-  --fontFamily-serif: Georgia, serif;
+  --fontFamily-serif: Palatino, Palatino Linotype, Palatino LT STD, Book Antiqua, Georgia, serif;
   --fontFamily-mono: Menlo,Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
   --content-letter-spacing: -0.01em;
   --head-nav-gap: 3.2rem;
-  --font-body: var(--fontFamily-sans);
+  --font-body: var(--fontFamily-serif);
   --font-heading: var(--fontFamily-sans);
   --fontWeight-normal: 400;
   --fontWeight-medium: 500;
@@ -86,6 +86,11 @@ body {
 
 footer {
   padding: var(--spacing-6) var(--spacing-0);
+  font-family: var(--fontFamily-sans);
+}
+
+nav, .bio {
+	font-family: var(--fontFamily-sans);
 }
 
 hr {
@@ -215,13 +220,11 @@ li > ul {
 
 blockquote {
   color: var(--color-text-light);
-  margin-left: calc(-1 * var(--spacing-6));
-  margin-right: var(--spacing-8);
+  margin: var(--spacing-8) var(--spacing-8) var(--spacing-8) var(--spacing-0);
   padding: var(--spacing-0) var(--spacing-0) var(--spacing-0) var(--spacing-6);
   border-left: var(--spacing-1) solid var(--color-primary);
   font-size: var(--fontSize-2);
   font-style: italic;
-  margin-bottom: var(--spacing-8);
 }
 
 blockquote > :last-child {
