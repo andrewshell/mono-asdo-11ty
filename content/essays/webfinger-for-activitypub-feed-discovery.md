@@ -6,48 +6,52 @@ published: true
 pagetype: https://schema.org/WebPage
 itemtype: https://schema.org/TechArticle
 ---
-
 This post is the first of several articles about the technology around [Understanding ActivityPub](/understanding-activitypub/).
 
 The first question I had while reading the ActivityPub specification was, "How do I find the different feeds and documents defined by the spec?"
 
-One of the first things defined would be an [actor object](https://www.w3.org/TR/activitypub/#actor-objects) that refers to me. An actor object contains, my name, avatar, and paths to the different [collections](https://www.w3.org/TR/activitypub/#collections).
+One of the first things defined would be an [actor object](https://www.w3.org/TR/activitypub/#actor-objects) that refers to me. An actor object contains my name, avatar, and paths to the different [collections](https://www.w3.org/TR/activitypub/#collections).
 
 ActivityPub doesn't define how to find an actor object for a specific user. Instead, existing networks like Mastodon use a different standard for this purpose, [WebFinger](https://www.rfc-editor.org/rfc/rfc7033).
 
-WebFinger is a pre-defined URL that allows you to look up information about a specific resource. Here is an example on how Mastodon uses it:
+WebFinger is a pre-defined URL that allows you to look up information about a specific resource. Here is an example of how Mastodon uses it:
 
-If you have a user in Mastodon `@andrewshell@pub.peakthink.org`, you can request `GET https://pub.peakthink.org/.well-known/webfinger?resource=andrewshell@pub.peakthink.org` and get back a WebFinger document in json:
+If you have a user in Mastodon `@andrewshell@indieweb.social`, you can request `GET https://indieweb.social/.well-known/webfinger?resource=acct:andrewshell@indieweb.social` and get back a WebFinger document in json:
 
 ```json
 {
-    "subject": "acct:andrewshell@pub.peakthink.org",
-    "aliases": [
-        "https://pub.peakthink.org/@andrewshell",
-        "https://pub.peakthink.org/users/andrewshell"
-    ],
-    "links": [
-        {
-            "rel": "http://webfinger.net/rel/profile-page",
-            "type": "text/html",
-            "href": "https://pub.peakthink.org/@andrewshell"
-        },
-        {
-            "rel": "self",
-            "type": "application/activity+json",
-            "href": "https://pub.peakthink.org/users/andrewshell"
-        },
-        {
-            "rel": "http://ostatus.org/schema/1.0/subscribe",
-            "template": "https://pub.peakthink.org/authorize_interaction?uri={uri}"
-        }
-    ]
+  "subject": "acct:andrewshell@indieweb.social",
+  "aliases": [
+    "https://indieweb.social/@andrewshell",
+    "https://indieweb.social/users/andrewshell"
+  ],
+  "links": [
+    {
+      "rel": "http://webfinger.net/rel/profile-page",
+      "type": "text/html",
+      "href": "https://indieweb.social/@andrewshell"
+    },
+    {
+      "rel": "self",
+      "type": "application/activity+json",
+      "href": "https://indieweb.social/users/andrewshell"
+    },
+    {
+      "rel": "http://ostatus.org/schema/1.0/subscribe",
+      "template": "https://indieweb.social/authorize_interaction?uri={uri}"
+    },
+    {
+      "rel": "http://webfinger.net/rel/avatar",
+      "type": "image/png",
+      "href": "https://cdn.masto.host/indiewebsocial/accounts/avatars/109/795/026/221/763/182/original/d639e13f753e4656.png"
+    }
+  ]
 }
 ```
 
 The link defined with `"rel": "self"` and `"type": "application/activity+json"` is the URL for my ActivityPub actor object.
 
-Another link, defined by `"rel": "http://webfinger.net/rel/profile-page"`, is the URL a human should visit for this actor's profile page.
+Another link, defined by `"rel": "http://webfinger.net/rel/profile-page"` is the URL a human should visit for this actor's profile page.
 
 The last link is something related to oStatus. However, that URL goes to a gambling spam site. So far, I have yet to track down precisely what I'm supposed to do with that link, but it's clear it has to do with subscribing.
 
