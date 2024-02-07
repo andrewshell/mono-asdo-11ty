@@ -53,7 +53,7 @@ The link defined with `"rel": "self"` and `"type": "application/activity+json"` 
 
 Another link, defined by `"rel": "http://webfinger.net/rel/profile-page"` is the URL a human should visit for this actor's profile page.
 
-The last link is something related to oStatus. However, that URL goes to a gambling spam site. So far, I have yet to track down precisely what I'm supposed to do with that link, but it's clear it has to do with subscribing.
+The last link is something related to oStatus. However, that URL goes to a gambling spam site. The wiki for it is [available from the w3c](https://www.w3.org/community/ostatus/wiki/Main_Page.html).
 
 Other services can also have links in the WebFinger document. For instance, OpenID Connect uses it.
 
