@@ -1,7 +1,7 @@
 ---
 title: WebFinger for ActivityPub Feed Discovery
 date: 2022-12-12T15:49:58.993Z
-updated: 2022-12-12T15:49:59.001Z
+updated: 2024-02-07T17:46:08.660Z
 published: true
 pagetype: https://schema.org/WebPage
 itemtype: https://schema.org/TechArticle
