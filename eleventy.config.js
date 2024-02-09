@@ -17,10 +17,8 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addPassthroughCopy({
 		"./public/": "/",
 		"./node_modules/prismjs/themes/prism-okaidia.css": "/css/prism-okaidia.css",
-		"./node_modules/lunr/lunr.min.js": "/js/lunr.min.js",
-		"./node_modules/@typefaces-pack/typeface-inter/fonts": "/bundle/fonts"
+		"./node_modules/lunr/lunr.min.js": "/js/lunr.min.js"
 	});
-
 
 	// Run Eleventy when these files change:
 	// https://www.11ty.dev/docs/watch-serve/#add-your-own-watch-targets
