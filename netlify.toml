@@ -15,6 +15,12 @@
 [[plugins]]
   package = "netlify-plugin-webmentions"
 	[plugins.inputs]
-	baseUrl = "https://blog.andrewshell.org"
-	feedPath = "/rss.xml"
-	limit = 1
+		baseUrl = "https://blog.andrewshell.org"
+		feedPath = "/rss.xml"
+		limit = 1
+
+[[plugins]]
+  package = "/plugins/netlify-plugin-rsscloud"
+	[plugins.inputs]
+		feedUrl = "https://blog.andrewshell.org/rss.xml"
+		pingUrl = "https://rpc.rsscloud.io/ping"
