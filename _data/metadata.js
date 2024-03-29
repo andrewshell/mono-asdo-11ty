@@ -7,7 +7,7 @@ module.exports = {
 		name: "Andrew Shell",
 		givenName: "Andrew",
 		familyName: "Shell",
-		jobTitle: "Senior Web Engineer/People Lead",
+		jobTitle: "Senior Web Engineer",
 		homeLocation: "Madison, WI",
 		email: "andrew@andrewshell.org",
 		url: "https://blog.andrewshell.org/about/"
