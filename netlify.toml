@@ -24,3 +24,8 @@
 	[plugins.inputs]
 		feedUrl = "https://blog.andrewshell.org/rss.xml"
 		pingUrl = "https://rpc.rsscloud.io/ping"
+
+[[headers]]
+  for = "/.well-known/*"
+    [headers.values]
+    Access-Control-Allow-Origin = "*"

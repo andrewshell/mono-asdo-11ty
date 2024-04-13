@@ -1,0 +1,15 @@
+{
+  "names": {
+    "im": "420a1c5e9bf24620f9d47f9806517f3756d2e963014838caa7807b88027256ac"
+  },
+  "relays": {
+    "420a1c5e9bf24620f9d47f9806517f3756d2e963014838caa7807b88027256ac": [
+      "wss://relay.damus.io",
+      "wss://nostr.wine",
+      "wss://nos.lol",
+      "wss://relay.nostr.band",
+      "wss://nostr.at",
+      "wss://relay.plebstr.com",
+    ]
+  }
+}
