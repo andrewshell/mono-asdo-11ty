@@ -1,28 +1,27 @@
 <!doctype html>
 <html lang="{{ metadata.language }}">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>{{ title or metadata.title }}</title>
-	<meta name="description" content="{{ description or metadata.description }}">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>{{ title or metadata.title }}</title>
+  <meta name="description" content="{{ description or metadata.description }}">
   {% if published === false %}<meta name="robots" content="noindex"/>{% endif %}
+  {% set absolutePostUrl %}{{ page.url | htmlBaseUrl(metadata.url) }}{% endset %}
 
-	<link rel="alternate" href="/rss.xml" type="application/rss+xml" title="{{ metadata.title }}">
+  <link rel="alternate" href="/rss.xml" type="application/rss+xml" title="{{ metadata.title }}">
 
-	<meta name="generator" content="{{ eleventy.generator }}">
-	{% favicons 'public/img/gatsby-icon.png', appleIconBgColor='#fff' %}
+  <meta name="generator" content="{{ eleventy.generator }}">
+  {% favicons 'public/img/gatsby-icon.png', appleIconBgColor='#fff' %}
 
-	{%- css %}{% include "public/css/normalize.css" %}{% endcss %}
-	{%- css %}{% include "public/css/style.css" %}{% endcss %}
-	{%- css %}{% include "node_modules/prismjs/themes/prism-okaidia.css" %}{% endcss %}
+  {%- css %}{% include "public/css/normalize.css" %}{% endcss %}
+  {%- css %}{% include "public/css/style.css" %}{% endcss %}
+  {%- css %}{% include "node_modules/prismjs/themes/prism-okaidia.css" %}{% endcss %}
 
-	{#- Render the CSS bundle using Inlined CSS (for the fastest site performance in production) #}
-	{#- <style>{% getBundle "css" %}</style> -#}
-	{#- Renders the CSS bundle using a separate file, if you can't set CSP directive style-src: 'unsafe-inline' #}
-	<link rel="stylesheet" href="{% getBundleFileUrl "css" %}">
-	<link rel="webmention" href="https://webmention.io/blog.andrewshell.org/webmention" />
-	<link rel="alternate" type="application/activity+json" href="https://fed.brid.gy/r/{{ page.url | htmlBaseUrl(metadata.url) | encodeURIComponent}}">
-	<script defer src="https://analytics.us.umami.is/script.js" data-website-id="ad25b1ce-ffdd-4f98-8dc8-cea81b233a1a"></script>
+  <link rel="stylesheet" href="{% getBundleFileUrl "css" %}">
+  <link rel="webmention" href="https://webmention.io/blog.andrewshell.org/webmention" />
+  <link rel="alternate" type="application/activity+json" href="https://fed.brid.gy/r/{{ page.url | htmlBaseUrl(metadata.url) | encodeURIComponent}}">
+  <link rel=“canonical” href=“{{ absolutePostUrl }}” />
+  <script defer src="https://analytics.us.umami.is/script.js" data-website-id="ad25b1ce-ffdd-4f98-8dc8-cea81b233a1a"></script>
 </head>
 <body>
 <div class="global-wrapper" itemscope itemtype="{{ pagetype or 'https://schema.org/WebPage' }}">

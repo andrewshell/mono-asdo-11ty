@@ -3,10 +3,9 @@ layout: layouts/base.njk
 ---
 <article class="blog-post" itemscope itemtype="{{ itemtype or 'https://schema.org/BlogPosting' }}">
 {%- if image %}
-<figure itemscope itemtype="http://schema.org/ImageObject">
-  <img src="{{ image }}" alt="{{ imagealt }}" itemprop="contentUrl" itemprop="description">
-  <figcaption itemprop="creditText">{{ imagecap }}</figcaption>
-  <meta itemprop="description" content="{{ imagealt }}">
+<figure>
+  {% image image, imagealt %}
+  <figcaption>{{ imagecap }}</figcaption>
 </figure>
 {%- endif %}
 <header>
@@ -15,9 +14,9 @@ layout: layouts/base.njk
 <section itemprop="articleBody">
 {{ content | safe }}
 <p>
-<small itemprop="datePublished" content="{{ date | htmlDateString }}" }>Published {{ date | readableDate('DDD') }}</small>
+<time class="small" itemprop="datePublished" datetime="{{ date | htmlDateString }}" }>Published {{ date | readableDate('DDD') }}</time>
 {% if isDiffDay(updated, date) %}
-<br><small itemprop="dateModified" content="{{ updated | htmlDateString }}" }>Updated {{ updated | readableDate('DDD') }}</small>
+<br><time class="small" itemprop="dateModified" datetime="{{ updated | htmlDateString }}" }>Updated {{ updated | readableDate('DDD') }}</time>
 {% endif %}
 </p>
 </section>

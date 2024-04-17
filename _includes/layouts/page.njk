@@ -3,9 +3,9 @@ layout: layouts/base.njk
 ---
 <article class="blog-post" itemscope itemtype="{{ itemtype or 'https://schema.org/Article' }}">
 {%- if image %}
-<figure itemscope itemtype="http://schema.org/ImageObject">
-  <img src="{{ image }}" alt="{{ imagealt }}" itemprop="contentUrl" itemprop="description">
-  <figcaption itemprop="creditText">{{ imagecap }}</figcaption>
+<figure>
+  {% image image, imagealt %}
+  <figcaption>{{ imagecap }}</figcaption>
 </figure>
 {%- endif %}
 <header>
