@@ -394,9 +394,8 @@ img {
   max-width: 100%;
 }
 
-span.updated {
-  font-size: 50%;
-  margin-left: 1em;
+small {
+  font-size: var(--fontSize-0);
 }
 
 .header-anchor {
@@ -406,6 +405,15 @@ span.updated {
 
 .footnote-item p {
   display: inline;
+}
+
+figure {
+  margin: var(--spacing-0) var(--spacing-0) var(--spacing-4) var(--spacing-0);
+}
+
+figcaption {
+  font-size: var(--fontSize-0);
+  text-align: center;
 }
 
 /* Media queries */
