@@ -3,7 +3,7 @@
   <li>
     <article class="post-list-item" itemscope itemtype="http://schema.org/Article">
     {%- if post.data.image %}
-    <a href="{{ post.url }}" rel="nofollow">{% image post.data.image, post.data.imagealt, [200] %}</a>
+    <a href="{{ post.url }}" rel="nofollow">{% image post.data.image, post.data.imagealt, "200" %}</a>
     {%- endif %}
     <section>
       <header>

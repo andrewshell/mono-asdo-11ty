@@ -4,7 +4,7 @@ layout: layouts/base.njk
 <article class="blog-post" itemscope itemtype="{{ itemtype or 'https://schema.org/BlogPosting' }}">
 {%- if image %}
 <figure>
-  {% image image, imagealt %}
+  {% image image, imagealt, "512" %}
   <figcaption>{{ imagecap }}</figcaption>
 </figure>
 {%- endif %}
