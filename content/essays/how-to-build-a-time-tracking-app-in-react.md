@@ -5,12 +5,14 @@ updated: 2024-05-29T16:58:44.000Z
 published: true
 pagetype: https://schema.org/WebPage
 itemtype: https://schema.org/Article
-image: /uploads/2018/09/Screen-Shot-2018-09-26-at-7.28.39-AM.png
-imagecap: Screenshot of my time tracking demo
-imagealt: Taskbar at the top with the current time showing a list of recently completed tasks beneath.
+image: /uploads/2024/05/how-to-build-a-time-tracking-app-in-react.webp
+imagecap: Image created by OpenAI's ChatGPT with DALL-E.
+imagealt: A quirky, surreal image representing the blog post about building a time-tracking app in React.
 ---
 
 In 2018, I built a time-tracking demo in React for a job I was applying for.
+
+![Screenshot of Time Tracking Demo](/uploads/2018/09/Screen-Shot-2018-09-26-at-7.28.39-AM.png)
 
 I had spent the years prior working with Angular (via Ionic), but many of the jobs I'd seen asked for React.
 
