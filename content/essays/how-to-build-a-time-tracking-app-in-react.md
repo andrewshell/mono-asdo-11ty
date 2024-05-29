@@ -1,23 +1,25 @@
 ---
 title: How To Build A Time Tracking App In React
-date: 2018-09-26T12:30:18.000Z
-updated: 2018-09-26T12:30:18.000Z
+date: 2024-05-29T16:58:44.000Z
+updated: 2024-05-29T16:58:44.000Z
 published: true
+pagetype: https://schema.org/WebPage
+itemtype: https://schema.org/Article
+image: /uploads/2018/09/Screen-Shot-2018-09-26-at-7.28.39-AM.png
+imagecap: Screenshot of my time tracking demo
+imagealt: Taskbar at the top with the current time showing a list of recently completed tasks beneath.
 ---
 
-Recently for a job I was applying for I build a time tracking demo in React.
+In 2018, I built a time-tracking demo in React for a job I was applying for.
 
-[![](/uploads/2018/09/Screen-Shot-2018-09-26-at-7.28.39-AM.png)](/uploads/2018/09/Screen-Shot-2018-09-26-at-7.28.39-AM.png)
+I had spent the years prior working with Angular (via Ionic), but many of the jobs I'd seen asked for React.
 
-I've spent the last 4-5 years working with Angular (via Ionic) but many of the jobs I've seen are asking for React.
+Since then, it's been dormant while I moved on to other things. I still only do a little React as my job is mostly backend Node.js development, but several side projects and one work project have had me refreshing myself with React.
 
-It's been easy to pick up and a lot of fun to work with. I like having this app as a demo because as I learn new things I'm able to include them in the app.
+Recently, I decided to take a stab at updating my demo as several things have changed through the years. Create React App is no longer in vogue, with people preferring Vite. I also dropped SCSS for CSS Modules. It's still using Redux, and I am still deciding if that's something I should keep.
 
-For instance, I'm very fond of SCSS for writing my styles. Variables and mixins are nice, but I love nested styles. I found a package `react-app-rewire-css-modules` which supports SCSS. It allows me to include a stylesheet for each of my components (as a [CSS Module](https://css-tricks.com/css-modules-part-1-need/)).
+I also set up things with pnpm workspaces and will probably add a backend soon.
 
-I've also figured out Redux. I was expecting it to be more difficult, but once I had the pieces in place it's actually pretty easy. I may run into issues with sharing data across reducers, but I'll cross that bridge when I get there.
+If you'd like to follow my development, here's the code: [Time Tracking Demo](https://github.com/andrewshell/time-tracking-demo).
 
-If you'd like to follow along with my development here's the code: [Time Tracking Demo](https://github.com/andrewshell/time-tracking-demo).
-
-If you're a React guru and would like to review my code and give me notes I'd appreciate it.
-
+If you're a React guru and would like to review my code and give me notes, I'd appreciate it.
