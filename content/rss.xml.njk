@@ -24,11 +24,11 @@ eleventyExcludeFromCollections: true
 	{% set absolutePostUrl %}{{ post.url | htmlBaseUrl(metadata.url) }}{% endset %}
 	<item>
 		<title>{{ post.data.title }}</title>
-		<description>{{ post.templateContent | transformWithHtmlBase(absolutePostUrl, post.url) | truncate(280) }}</description>
+		<description>{{ post.content | striptags(true) | transformWithHtmlBase(absolutePostUrl, post.url) | truncate(280) }}</description>
 		<link>{{ absolutePostUrl }}</link>
 		<guid isPermaLink="false">{{ absolutePostUrl }}</guid>
 		<pubDate>{{ post.date | dateToRfc822 }}</pubDate>
-		<content:encoded>{{ post.templateContent | transformWithHtmlBase(absolutePostUrl, post.url) }}</content:encoded>
+		<content:encoded>{{ post.content | transformWithHtmlBase(absolutePostUrl, post.url) }}</content:encoded>
 		<source:markdown>{{ post.template.frontMatter.content }}</source:markdown>
 	</item>
 	{%- endfor %}

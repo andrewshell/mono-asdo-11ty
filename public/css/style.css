@@ -27,9 +27,9 @@
   --spacing-20: 5rem;
   --spacing-24: 6rem;
   --spacing-32: 8rem;
-  --fontFamily-sans: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif; /* stylelint-disable-line value-keyword-case */
-  --fontFamily-serif: Palatino, Palatino Linotype, Palatino LT STD, Book Antiqua, Georgia, serif;
-  --fontFamily-mono: Menlo,Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
+  --fontFamily-sans: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto;
+  --fontFamily-serif: 'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif;
+  --fontFamily-mono: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
   --content-letter-spacing: -0.01em;
   --head-nav-gap: 3.2rem;
   --font-body: var(--fontFamily-serif);
@@ -54,12 +54,11 @@
   --fontSize-5: 1.72rem;
   --fontSize-6: 1.97rem;
   --fontSize-7: 2.25rem;
-  --color-primary: #005b99;
-  --color-text: #2e353f;
-  --color-text-light: #4f5969;
-  --color-heading: #1a202c;
-  --color-heading-black: black;
-  --color-accent: #d1dce5;
+  --color-body: #fdfcfb;
+  --color-primary: #b33900;
+  --color-text: #240b00;
+  --color-text-light: #7f2600;
+  --color-heading: #240b00;
 }
 
 /* HTML elements */
@@ -78,6 +77,7 @@ html {
 }
 
 body {
+	background-color: var(--color-body);
   font-family: var(--font-body);
   font-size: var(--fontSize-1);
   color: var(--color-text);
@@ -94,7 +94,7 @@ nav, .bio {
 }
 
 hr {
-  background: var(--color-accent);
+  background: var(--color-primary);
   height: 1px;
   border: 0;
 }
@@ -121,26 +121,18 @@ h3,
 h4,
 h5,
 h6 {
+	color: var(--color-heading);
   font-family: var(--font-heading);
+  font-weight: var(--fontWeight-bold);
   margin-top: var(--spacing-12);
   margin-bottom: var(--spacing-6);
   line-height: var(--lineHeight-tight);
   letter-spacing: -0.025em;
 }
 
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: var(--fontWeight-bold);
-  color: var(--color-heading);
-}
-
 h1 {
   font-weight: var(--fontWeight-black);
   font-size: var(--fontSize-6);
-  color: var(--color-heading-black);
 }
 
 h2 {
@@ -227,11 +219,6 @@ li *:last-child {
   margin-bottom: var(--spacing-0);
 }
 
-li > ul {
-  margin-left: var(--spacing-8);
-  margin-top: calc(var(--spacing-8) / 2);
-}
-
 blockquote {
   color: var(--color-text-light);
   margin: var(--spacing-8) var(--spacing-8) var(--spacing-8) var(--spacing-0);
@@ -258,7 +245,7 @@ table {
 }
 
 table thead tr th {
-  border-bottom: 1px solid var(--color-accent);
+  border-bottom: 1px solid var(--color-primary);
 }
 
 /* Link */
@@ -270,6 +257,8 @@ a {
 a:hover,
 a:focus {
   text-decoration: none;
+  background-color: var(--color-primary);
+  color: var(--color-body);
 }
 
 /* Custom classes */
@@ -342,6 +331,10 @@ a:focus {
   display: flex;
   align-items: center;
   margin-bottom: var(--spacing-16);
+}
+
+.bio p {
+	margin-bottom: var(--spacing-0);
 }
 
 .bio-avatar {
@@ -432,7 +425,7 @@ small, .small {
 
 .header-anchor {
   font-size: var(--fontSize-1);
-  opacity: 0.5;
+  opacity: 0.2;
 }
 
 .footnote-item p {

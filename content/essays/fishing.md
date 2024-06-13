@@ -2,7 +2,7 @@
 title: "Bait, Cast, Catch: Fishing Strategies for Life Success"
 date: 2024-05-22T11:43:01.000Z
 updated: 2024-05-22T11:43:01.000Z
-published: true
+published: false
 pagetype: https://schema.org/WebPage
 itemtype: https://schema.org/Article
 image: /uploads/2024/05/fishing.webp
@@ -15,7 +15,7 @@ I recently watched a video from Tom Segura about his [11-year-old nephew fishing
 
 If you want to catch fish, you need a line in the water. I suspect there are other ways to catch fish, like using a net, but the principle is you have to take action. It's the same as "You can't hit the ball if you don't swing the bat." You need to try things if you want to succeed.
 
-## 2. You Have to Use the Right Bait
+## 2. You Have to Use the Right Bait
 
 I'm playing this game [Wylde Flowers](https://wyldeflowersgame.com/), and you can use different types of bait. Certain types of fish can't be caught with a worm; you need a cricket or a chub. Like in the Segura video, the kid said, "We'll get a good catfish with this," you need to use the right strategies to achieve your goals.
 
