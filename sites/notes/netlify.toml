@@ -1,5 +1,5 @@
 [build]
-  publish = "site/notes/_site"
+  publish = "_site"
   command = "pnpm -F notes run build"
 
 [[plugins]]
