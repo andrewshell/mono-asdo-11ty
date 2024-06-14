@@ -36,9 +36,12 @@
 {% endif %}
 </header>
 <main>{{ content | safe }}</main>
-<footer>
-© 2023, Built with <a href="https://www.11ty.dev/">11ty</a>
+<footer class="global-footer">
+<p>&copy; 2024, Built with <a href="https://www.11ty.dev/">11ty</a></p>
 <ul class="hlist">
+<li><strong>Page:</strong></li>
+<li><a href="https://github.com/andrewshell/blog-asdo-11ty/commits/master/{{ page.inputPath }}">History</a></li>
+<li><a href="https://github.com/andrewshell/blog-asdo-11ty/blob/master/{{ page.inputPath }}">Source</a></li>
 <li><strong>Social:</strong></li>
 <li><a href="/rss.xml">RSS</a></li>
 <li><a rel="me" href="https://twitter.com/andrewshell">Twitter</a></li>

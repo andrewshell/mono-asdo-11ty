@@ -77,7 +77,7 @@ html {
 }
 
 body {
-	background-color: var(--color-body);
+  background-color: var(--color-body);
   font-family: var(--font-body);
   font-size: var(--fontSize-1);
   color: var(--color-text);
@@ -90,7 +90,7 @@ footer {
 }
 
 nav, .bio {
-	font-family: var(--fontFamily-sans);
+  font-family: var(--fontFamily-sans);
 }
 
 hr {
@@ -121,7 +121,7 @@ h3,
 h4,
 h5,
 h6 {
-	color: var(--color-heading);
+  color: var(--color-heading);
   font-family: var(--font-heading);
   font-weight: var(--fontWeight-bold);
   margin-top: var(--spacing-12);
@@ -269,8 +269,12 @@ a:focus {
   padding: var(--spacing-10) var(--spacing-5);
 }
 
-.global-wrapper[data-is-root-path="true"] .bio {
+.bio {
   margin-bottom: var(--spacing-20);
+}
+
+footer .bio {
+  margin-bottom: var(--spacing-0);
 }
 
 .global-header {
@@ -296,9 +300,9 @@ a:focus {
 }
 
 .post-list-item picture {
-	display: block;
-	height: auto;
-	width: 200px;
+  display: block;
+  height: auto;
+  width: 200px;
 }
 
 .post-list-item > section {
@@ -333,8 +337,8 @@ a:focus {
   margin-bottom: var(--spacing-16);
 }
 
-.bio p {
-	margin-bottom: var(--spacing-0);
+.bio p, footer p {
+  margin-bottom: var(--spacing-0);
 }
 
 .bio-avatar {
@@ -367,11 +371,11 @@ a:focus {
 }
 
 .blog-post picture {
-	display: block;
-	height: auto;
-	width: 512px;
-	max-width: 100%;
-	margin: auto;
+  display: block;
+  height: auto;
+  width: 512px;
+  max-width: 100%;
+  margin: auto;
 }
 
 .blog-post-nav ul {
@@ -435,13 +439,13 @@ small, .small {
 /* Media queries */
 
 @media (max-width: 42rem) {
-	.bio, .post-list-item {
-	  flex-direction: column;
-	}
-	.bio-avatar, .post-list-item > a {
-		margin-right: var(--spacing-0);
+  .bio, .post-list-item {
+    flex-direction: column;
+  }
+  .bio-avatar, .post-list-item > a {
+    margin-right: var(--spacing-0);
     margin-bottom: var(--spacing-4);
-	}
+  }
   blockquote {
     padding: var(--spacing-0) var(--spacing-0) var(--spacing-0) var(--spacing-4);
     margin-left: var(--spacing-0);
