@@ -8,8 +8,6 @@ importers:
 
   .: {}
 
-  packages/netlify-plugin-rsscloud: {}
-
   sites/blog:
     devDependencies:
       '@11ty/eleventy':
@@ -63,9 +61,6 @@ importers:
       '@11ty/eleventy-plugin-syntaxhighlight':
         specifier: ^5.0.0
         version: 5.0.0
-      '@andrewshell/netlify-plugin-rsscloud':
-        specifier: file:../../packages/netlify-plugin-rsscloud
-        version: link:../../packages/netlify-plugin-rsscloud
       '@eslint/js':
         specifier: ^9.3.0
         version: 9.4.0
