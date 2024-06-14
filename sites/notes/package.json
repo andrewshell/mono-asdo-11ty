@@ -1,0 +1,14 @@
+{
+  "name": "notes",
+  "version": "1.0.0",
+  "description": "Collection of notes by Andrew Shell published as an 11ty website",
+  "type": "module",
+  "scripts": {
+    "build": "eleventy",
+    "start": "eleventy --serve --quiet"
+  },
+  "dependencies": {
+    "lunr": "^2.3.9",
+    "prismjs": "^1.29.0"
+  }
+}

@@ -1,0 +1,21 @@
+[build]
+  publish = "site/notes/_site"
+  command = "pnpm -F notes run build"
+
+[[plugins]]
+  package = "netlify-plugin-webmentions"
+  [plugins.inputs]
+    baseUrl = "https://notes.andrewshell.org"
+    feedPath = "/rss.xml"
+    limit = 1
+
+[[plugins]]
+  package = "@andrewshell/netlify-plugin-rsscloud"
+  [plugins.inputs]
+    feedUrl = "https://notes.andrewshell.org/rss.xml"
+    pingUrl = "https://rpc.rsscloud.io/ping"
+
+[[headers]]
+  for = "/.well-known/*"
+    [headers.values]
+    Access-Control-Allow-Origin = "*"
