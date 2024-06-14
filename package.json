@@ -11,6 +11,23 @@
   },
   "author": "Andrew Shell <andrew@andrewshell.org>",
   "license": "MIT",
+  "dependencies": {
+    "@11ty/eleventy": "3.0.0-alpha.13",
+    "@11ty/eleventy-plugin-rss": "^2.0.0",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
+    "@eslint/js": "^9.3.0",
+    "dotenv": "^16.4.5",
+    "eleventy-plugin-gen-favicons": "^1.1.2",
+    "jsdom": "^24.1.0",
+    "lunr": "^2.3.9",
+    "lunr-languages": "^1.14.0",
+    "luxon": "^3.4.4",
+    "markdown-it-anchor": "^9.0.1",
+    "markdown-it-footnote": "^4.0.0",
+    "netlify-plugin-webmentions": "^1.1.1",
+    "nunjucks": "^3.2.4",
+    "prismjs": "^1.29.0"
+  },
   "private": true,
   "repository": {
     "type": "git",

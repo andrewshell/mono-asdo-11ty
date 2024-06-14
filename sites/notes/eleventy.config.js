@@ -26,7 +26,7 @@ export default async function (eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy({
     "./public/": "/",
-    "./node_modules/lunr/lunr.min.js": "/js/lunr.min.js",
+    "../../node_modules/lunr/lunr.min.js": "/js/lunr.min.js",
   });
 
   // Filters

@@ -6,51 +6,7 @@ settings:
 
 importers:
 
-  .: {}
-
-  sites/blog:
-    devDependencies:
-      '@11ty/eleventy':
-        specifier: ^2.0.1
-        version: 2.0.1
-      '@11ty/eleventy-img':
-        specifier: ^4.0.0
-        version: 4.0.2
-      '@11ty/eleventy-plugin-bundle':
-        specifier: ^1.0.5
-        version: 1.0.5
-      '@11ty/eleventy-plugin-rss':
-        specifier: ^1.2.0
-        version: 1.2.0
-      '@11ty/eleventy-plugin-syntaxhighlight':
-        specifier: ^5.0.0
-        version: 5.0.0
-      '@netlify/plugin-lighthouse':
-        specifier: ^6.0.0
-        version: 6.0.0
-      eleventy-plugin-gen-favicons:
-        specifier: ^1.1.2
-        version: 1.1.2
-      lunr:
-        specifier: ^2.3.9
-        version: 2.3.9
-      lunr-languages:
-        specifier: ^1.14.0
-        version: 1.14.0
-      luxon:
-        specifier: ^3.4.4
-        version: 3.4.4
-      markdown-it-anchor:
-        specifier: ^8.6.7
-        version: 8.6.7(@types/markdown-it@14.1.1)(markdown-it@14.1.0)
-      markdown-it-footnote:
-        specifier: ^4.0.0
-        version: 4.0.0
-      prismjs:
-        specifier: ^1.29.0
-        version: 1.29.0
-
-  sites/notes:
+  .:
     dependencies:
       '@11ty/eleventy':
         specifier: 3.0.0-alpha.13
@@ -97,6 +53,50 @@ importers:
       prismjs:
         specifier: ^1.29.0
         version: 1.29.0
+
+  sites/blog:
+    devDependencies:
+      '@11ty/eleventy':
+        specifier: ^2.0.1
+        version: 2.0.1
+      '@11ty/eleventy-img':
+        specifier: ^4.0.0
+        version: 4.0.2
+      '@11ty/eleventy-plugin-bundle':
+        specifier: ^1.0.5
+        version: 1.0.5
+      '@11ty/eleventy-plugin-rss':
+        specifier: ^1.2.0
+        version: 1.2.0
+      '@11ty/eleventy-plugin-syntaxhighlight':
+        specifier: ^5.0.0
+        version: 5.0.0
+      '@netlify/plugin-lighthouse':
+        specifier: ^6.0.0
+        version: 6.0.0
+      eleventy-plugin-gen-favicons:
+        specifier: ^1.1.2
+        version: 1.1.2
+      lunr:
+        specifier: ^2.3.9
+        version: 2.3.9
+      lunr-languages:
+        specifier: ^1.14.0
+        version: 1.14.0
+      luxon:
+        specifier: ^3.4.4
+        version: 3.4.4
+      markdown-it-anchor:
+        specifier: ^8.6.7
+        version: 8.6.7(@types/markdown-it@14.1.1)(markdown-it@14.1.0)
+      markdown-it-footnote:
+        specifier: ^4.0.0
+        version: 4.0.0
+      prismjs:
+        specifier: ^1.29.0
+        version: 1.29.0
+
+  sites/notes: {}
 
 packages:
 
