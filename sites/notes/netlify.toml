@@ -10,7 +10,7 @@
     limit = 1
 
 [[plugins]]
-  package = "@andrewshell/netlify-plugin-rsscloud"
+  package = "../../plugins/netlify-plugin-rsscloud"
   [plugins.inputs]
     feedUrl = "https://notes.andrewshell.org/rss.xml"
     pingUrl = "https://rpc.rsscloud.io/ping"

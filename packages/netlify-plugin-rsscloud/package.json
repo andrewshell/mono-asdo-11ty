@@ -1,7 +1,0 @@
-{
-  "name": "@andrewshell/netlify-plugin-rsscloud",
-  "version": "1.0.0",
-  "description": "Netlify plugin to notify rsscloud of updated rss.xml",
-  "main": "index.js",
-  "license": "MIT"
-}
